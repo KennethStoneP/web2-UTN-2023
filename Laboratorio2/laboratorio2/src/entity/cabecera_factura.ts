@@ -19,10 +19,7 @@ export class cabecera_factura {
   @ManyToOne(() => vendedor, vendedor => vendedor.Celular_vendedor)
   @JoinColumn({ name: ' Codigo_vendedor' })
   vendedor: vendedor;
-
-  //@ManyToMany(() => producto, producto => producto.Codigo_producto)
-  //@JoinColumn({ name: 'Codigo_producto' })
-  //producto: producto;
+  
   @ManyToMany(() => producto)
   @JoinTable({
     name: 'detalle_factura',

@@ -1,4 +1,4 @@
-import {Entity, PrimaryGeneratedColumn,Column,OneToOne,JoinColumn, PrimaryColumn, ManyToMany,} from "typeorm"
+import {Entity,Column,OneToOne,JoinColumn, PrimaryColumn, ManyToMany,} from "typeorm"
 import { proveedor } from "./proveedor"
 import { cabecera_factura } from "./cabecera_factura"
 
